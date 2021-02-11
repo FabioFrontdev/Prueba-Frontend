@@ -1,0 +1,25 @@
+@import "./vars.scss";
+
+
+.header {
+    background-color: royalblue;
+    width: $universal-width;
+    max-width: $universal-Maxwidth;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 10px;
+    padding: 5px;
+}
+
+.Container-logo {
+    width: 50%;
+}
+
+.Container-logo__logo {
+    font-family: $logo-font;
+    color: $logo-color;
+    font-size: 60px;
+    text-decoration: $a-text-decoration;
+}
