@@ -1,5 +1,39 @@
+@import "./vars.scss";
+
 * {
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: url(../assets/images_bg01.png);
+    background-size: 100px;
+    background-color: $main-color;
+    padding: 0 46px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Container-logo {
+    width: 60%;
+    background-color: khaki;
+}
+
+.Container-logo__logo {
+    font-family: $logo-font;
+    color: $logo-color;
+    font-size: 60px;
 }

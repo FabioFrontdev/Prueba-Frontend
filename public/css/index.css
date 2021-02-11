@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
+* {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+body {
+  background: url(../assets/images_bg01.png);
+  background-size: 100px;
+  background-color: #f2f2f2;
+  padding: 0 46px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+
+.header {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+
+.Container-logo {
+  width: 60%;
+  background-color: khaki; }
+
+.Container-logo__logo {
+  font-family: "Oleo Script",cursive;
+  color: #f2463c;
+  font-size: 60px; }
