@@ -13,16 +13,17 @@
     "maintained node versions",
     "not dead"
   ],
-  "dependencies": {
+  "devDependencies": {
+    "@babel/cli": "^7.12.13",
+    "@babel/core": "^7.12.13",
+    "@babel/register": "^7.12.13",
+    "gulp-uglify": "^3.0.2",
     "@babel/preset-env": "^7.12.13",
     "browser-sync": "^2.26.13",
     "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
     "gulp-plumber": "^1.2.1",
     "gulp-pug": "^4.0.1",
     "gulp-sass": "^4.1.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.12.13",
-    "@babel/register": "^7.12.13"
   }
 }
