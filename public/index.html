@@ -7,13 +7,22 @@
     <title>My Lorem</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-    <script href="js/main.js"></script>
+    <script href="js/App.js"></script>
   </head>
   <body>
     <header class="header" id="Header">
       <div class="Container-logo"><a class="Container-logo__logo" href="/">myLorem</a></div>
+      <div class="nav navbar">
+        <ul class="nav-content">
+          <li><a class="nav-content__item" href="#Welcome">Welcome</a></li>
+          <li><a class="nav-content__item" href="#Cards">Dropdown</a></li>
+          <li><a class="nav-content__item" href="#About">Left Sidebar</a></li>
+          <li><a class="nav-content__item" href="">Right Sidebar</a></li>
+          <li><a class="nav-content__item" href="">No Sidebar</a></li>
+        </ul>
+      </div>
       <div class="toggle-menu">
-        <div class="toggle-menu__icon" id="toggle-menu">
+        <div class="toggle-menu__icon navbar-toggler" id="toggle-menu">
           <div class="first-bar"></div>
           <div class="second-bar"> </div>
           <div class="third-bar"></div>
@@ -56,11 +65,52 @@
         </div>
       </div>
     </section>
-    <section class="About" id="About">
-      <h1>Hello About</h1>
+    <section class="about" id="About">
+      <div class="about-interesting">
+        <h2 class="about-interesting__subtitle">Interesting stuff.</h2>
+        <div class="about-interesting__images"><img src="./assets/pic04.jpg" alt="Pic 04"><img src="./assets/pic05.jpg" alt="Pic 05"><img src="./assets/pic06.jpg" alt="Pic 06"><img src="./assets/pic07.jpg" alt="Pic 07"></div>
+        <div class="about-interesting__btn"><i class="far fa-file-alt"></i><a href="/">More</a></div>
+      </div>
+      <div class="about-what">
+        <h2 class="about-what__subtitle">So what's this all about?</h2>
+        <p class="about-what__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione delectus quasi esse facilis doloribus sed nihil iusto similique, est eum, odit nemo ipsa voluptatibus animi ipsam? Ut, fugit culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione delectus quasi esse facilis doloribus sed nihil iusto similique, est eum, odit nemo ipsa voluptatibus animi ipsam? Ut, fugit culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione delectus quasi esse facilis doloribus sed.</p>
+        <p class="about-what__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione delectus quasi esse facilis doloribus sed nihil iusto similique, est eum, odit nemo ipsa voluptatibus animi ipsam? Ut, fugit culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione delectus quasi esse facilis doloribus sed nihil.</p>
+      </div>
     </section>
     <footer class="footer" id="Footer">
-      <h1>Hello Footer</h1>
+      <div class="footer-first">
+        <div class="footer-first__random">
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="footer-first__random">
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="footer-first__random">
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="footer-first__random">
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+      </div>
+      <div class="footer-second">
+        <p class="copy-right">&#169; Untitled. All rights reserved</p>
+      </div>
     </footer>
   </body>
 </html>

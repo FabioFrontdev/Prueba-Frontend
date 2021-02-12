@@ -3,8 +3,10 @@
 
 @import "./header.scss";
 @import "./toggle-menu.scss";
+@import "menu.scss";
 @import "./welcome.scss";
 @import "./cards.scss";
+@import "./about.scss";
 
 * {
     margin: 0;
@@ -16,7 +18,7 @@ body {
     background: url(../assets/images_bg01.png);
     background-size: 100px;
     background-color: $main-color;
-    padding: 0 46px;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;

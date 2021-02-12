@@ -7,20 +7,19 @@ html(lang="en")
         title My Lorem
         link(rel="stylesheet", href="css/index.css")
         link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous")
-        script(href="js/main.js")
+        script(href="js/App.js")
     body
         header#Header.header
             div.Container-logo
                 a.Container-logo__logo(href='/') myLorem
 
             include menu
+            include menu-resp
 
         include Welcome
                 
         include Cards
 
-        section#About.About
-            h1 Hello About
+        include About
 
-        footer#Footer.footer
-            h1 Hello Footer
+        include Footer

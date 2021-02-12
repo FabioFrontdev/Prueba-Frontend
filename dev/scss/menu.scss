@@ -1,2 +1,67 @@
 @import "./vars.scss";
 
+.nav {
+    width: 60%;
+
+    @include tablet{
+        display: none;
+    }
+
+    @include mobile {
+        display: none;
+    }
+
+    @include desktop{
+        display: block;
+    }
+
+    @include laptop{
+        display: block;
+    }
+
+    & .nav-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        list-style-type: none;
+
+        & li {
+            padding: 8px 10px;
+            margin-left: 15px;
+            color: $Darkgray-color;
+            font-family: $universal-font;
+            font-weight: 800;
+            border-radius: 8px;
+            transition: background-color 0.8s linear 0.2s;
+
+            @include tablet{
+                margin-left: 2px;
+            }
+        
+            @include mobile {
+                display: none;
+            }
+        
+            @include desktop{
+                margin-left: 15px;
+            }
+        
+            @include laptop{
+                margin-left: 2px;
+            }
+
+            & .nav-content__item {
+                text-decoration: $a-text-decoration;
+                color: inherit;
+            }
+        }
+
+        & li:hover {
+            background-color: $Darkgray-color;
+            color: #fff;
+        }
+    }
+   
+}
+

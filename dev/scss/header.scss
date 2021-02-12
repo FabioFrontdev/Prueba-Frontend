@@ -3,7 +3,6 @@
 
 
 .header {
-    background-color: royalblue;
     max-width: $desktop;
     width: 100%;
     display: flex;
@@ -11,15 +10,16 @@
     align-items: center;
     justify-content: space-between;
     margin: 20px 10px;
-    padding: 5px;
+    padding: 0 46px;
 
     @include mobile{
-        margin: 0 10px;
+        margin: 0 5px;
+        padding: 0 16px;
     }
 }
 
 .Container-logo {
-    width: 50%;
+    width: 40%;
 }
 
 .Container-logo__logo {

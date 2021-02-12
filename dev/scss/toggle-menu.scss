@@ -1,8 +1,27 @@
+@import "./mixins/breakpoints.scss";
 @import "./vars.scss";
 
 .toggle-menu {
     height: 50px;
     width: 50px;
+
+    @include tablet{
+        display: block;
+    }
+
+    @include mobile {
+        display: block;
+    }
+
+    @include desktop{
+        display: none;
+    }
+
+    @include laptop{
+        display: none;
+    }
+
+
 
     &__icon {
         height: 50px;
