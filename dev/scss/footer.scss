@@ -1,0 +1,96 @@
+@import "./vars.scss";
+
+.footer {
+    max-width: $desktop;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0;
+    padding: 0 46px;
+
+    @include mobile{
+        margin: 0 5px;
+        padding: 0 16px;
+    }
+
+    & .footer-first {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0;
+
+        @include mobile{
+            margin: 0 5px;
+            padding: 0 16px;
+            flex-direction: column;
+        }
+
+        & .footer-first__random {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            max-width: 300px;
+
+            @include mobile{
+                margin: 20px 0;
+            }
+
+            & h2 {
+                font-size: 20px;
+                margin-bottom: 15px;
+                font-family: $universal-font;
+                font-weight: 800;
+                color: $Darkgray-color;
+            }
+
+            & p {
+                font-size: 13px;
+                margin-bottom: 15px;
+                font-family: $universal-font;
+                font-weight: 500;
+                color: $Darkgray-color;
+                line-height: 15px;
+                text-decoration: underline;
+            }
+
+            & .footer-first__random__social{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        & .footer-first__random__1 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            max-width: 300px;
+            font-size: 13px;
+            margin-bottom: 15px;
+            font-family: $universal-font;
+            font-weight: 500;
+            color: $Darkgray-color;
+            line-height: 30px;
+            text-decoration: none;
+            
+            & i {
+                width: 50px;
+                font-size: 40px;
+                margin-bottom: 15px;
+            }
+
+           
+
+            @include mobile{
+                margin: 20px 0;
+            }
+        }
+    }
+}
