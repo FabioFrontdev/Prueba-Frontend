@@ -3,15 +3,11 @@
 
 @import "./header.scss";
 @import "./toggle-menu.scss";
+@import "./welcome.scss";
 
 * {
     margin: 0;
     box-sizing: border-box;
-}
-
-h1 {
-    color: $Darkgray-color;
-    width: 60px;
 }
 
 body {
@@ -19,7 +15,6 @@ body {
     background-size: 100px;
     background-color: $main-color;
     padding: 0 46px;
-    // min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,4 +40,5 @@ body {
 
 .main, .footer {
     font-family: $universal-font;
+
 }

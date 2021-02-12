@@ -1,0 +1,108 @@
+@import "./vars.scss";
+
+.welcome {
+    max-width: 1400px;
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    background-color: #fff;
+    border-radius: 8px;
+
+    @include mobile {
+        width: 310px;
+        flex-direction: column;
+        padding: 0;
+        margin-top: 15px;
+    }
+}
+
+.welcome-hi, .welcome-btnPrincipal {
+    width: 500px;
+    margin: 20px;
+    
+    @include mobile {
+        width: auto;
+        margin: 10px;
+    }
+
+}
+
+.welcome-hi {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.welcome-btnPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+
+    @include mobile {
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    & .btnPrincipal {
+        background-color: $main-color;
+        width: 300px;
+        height: 70px;
+        padding: 10px 20px 10px 1px;
+        border-radius: 8px;
+        color: $Darkgray-color;
+        text-decoration: $a-text-decoration;
+        font-size: 32px;
+        font-weight: 800;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+        transition: background-color 0.8s linear 0.2s;
+
+        @include mobile {
+            width: 280px;
+        }
+    }
+
+    & .btnPrincipal:hover {
+        background-color: #1591c4;
+        color: #fff;
+    }
+
+    & .btnPrincipal1:active {
+        background-color: #1591c4;
+        color: #fff;
+    }
+
+    & .btnPrincipal:focus {
+        outline: transparent;
+    }
+
+}
+
+.welcome-hi__tilte {
+    font-size: 40px;
+    font-weight: 800;
+    color: $Darkgray-color;
+
+    @include mobile {
+        font-size: 32px;
+    }
+}
+
+.welcome-hi__p-principal {
+    font-size: 32px;
+    color: #696969;
+
+    @include mobile {
+        width: auto;
+        font-size: 18px;
+    }
+}

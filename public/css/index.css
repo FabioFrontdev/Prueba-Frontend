@@ -1,12 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Open+Sans:wght@300;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Open+Sans:wght@300;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Open+Sans:wght@300;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Open+Sans:wght@300;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Open+Sans:wght@300;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Open+Sans:wght@300;400;600;700;800&display=swap");
 .header {
   background-color: royalblue;
+  max-width: 1400px;
   width: 100%;
-  max-width: 1200px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -26,6 +27,10 @@
   color: #f2463c;
   font-size: 60px;
   text-decoration: none; }
+
+@media screen and (max-width: 360px) {
+  .Container-logo__logo {
+    font-size: 50px; } }
 
 .toggle-menu {
   height: 50px;
@@ -53,13 +58,103 @@
 .toggle-menu__icon .third-bar {
   top: 40px; }
 
+.welcome {
+  max-width: 1400px;
+  width: 100%;
+  padding: 15px 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  background-color: #fff;
+  border-radius: 8px; }
+
+@media screen and (max-width: 360px) {
+  .welcome {
+    width: 310px;
+    flex-direction: column;
+    padding: 0;
+    margin-top: 15px; } }
+
+.welcome-hi, .welcome-btnPrincipal {
+  width: 500px;
+  margin: 20px; }
+
+@media screen and (max-width: 360px) {
+  .welcome-hi, .welcome-btnPrincipal {
+    width: auto;
+    margin: 10px; } }
+
+.welcome-hi {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around; }
+
+.welcome-btnPrincipal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center; }
+
+@media screen and (max-width: 360px) {
+  .welcome-btnPrincipal {
+    align-items: center;
+    margin: 0 auto; } }
+
+.welcome-btnPrincipal .btnPrincipal {
+  background-color: #f2f2f2;
+  width: 300px;
+  height: 70px;
+  padding: 10px 20px 10px 1px;
+  border-radius: 8px;
+  color: #444;
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  transition: background-color 0.8s linear 0.2s; }
+
+@media screen and (max-width: 360px) {
+  .welcome-btnPrincipal .btnPrincipal {
+    width: 280px; } }
+
+.welcome-btnPrincipal .btnPrincipal:hover {
+  background-color: #1591c4;
+  color: #fff; }
+
+.welcome-btnPrincipal .btnPrincipal1:active {
+  background-color: #1591c4;
+  color: #fff; }
+
+.welcome-btnPrincipal .btnPrincipal:focus {
+  outline: transparent; }
+
+.welcome-hi__tilte {
+  font-size: 40px;
+  font-weight: 800;
+  color: #444; }
+
+@media screen and (max-width: 360px) {
+  .welcome-hi__tilte {
+    font-size: 32px; } }
+
+.welcome-hi__p-principal {
+  font-size: 32px;
+  color: #696969; }
+
+@media screen and (max-width: 360px) {
+  .welcome-hi__p-principal {
+    width: auto;
+    font-size: 18px; } }
+
 * {
   margin: 0;
   box-sizing: border-box; }
-
-h1 {
-  color: #444;
-  width: 60px; }
 
 body {
   background: url(../assets/images_bg01.png);
