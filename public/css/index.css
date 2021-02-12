@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
 .header {
   background-color: royalblue;
   width: 100%;
@@ -11,6 +14,10 @@
   margin: 20px 10px;
   padding: 5px; }
 
+@media screen and (max-width: 360px) {
+  .header {
+    margin: 0 10px; } }
+
 .Container-logo {
   width: 50%; }
 
@@ -20,12 +27,41 @@
   font-size: 60px;
   text-decoration: none; }
 
+.toggle-menu {
+  height: 50px;
+  width: 50px; }
+
+.toggle-menu__icon {
+  height: 50px;
+  width: 50px;
+  bottom: 3px;
+  position: relative; }
+
+.toggle-menu__icon .first-bar, .toggle-menu__icon .second-bar, .toggle-menu__icon .third-bar {
+  position: absolute;
+  width: 45px;
+  height: 8px;
+  background-color: #444;
+  border-radius: 5px; }
+
+.toggle-menu__icon .first-bar {
+  top: 10px; }
+
+.toggle-menu__icon .second-bar {
+  top: 25px; }
+
+.toggle-menu__icon .third-bar {
+  top: 40px; }
+
 * {
   margin: 0;
   box-sizing: border-box; }
 
+h1 {
+  color: #444;
+  width: 60px; }
+
 body {
-  width: 100%;
   background: url(../assets/images_bg01.png);
   background-size: 100px;
   background-color: #f2f2f2;
@@ -34,3 +70,23 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+
+@media screen and (max-width: 360px) {
+  body {
+    background-color: #f2f2f2;
+    padding: 0; } }
+
+@media screen and (min-width: 361px) {
+  body {
+    background-color: #f2f2f2; } }
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-color: #f2f2f2; } }
+
+@media screen and (min-width: 1400px) {
+  body {
+    background-color: #f2f2f2; } }
+
+.main, .footer {
+  font-family: "Open Sans",sans-serif; }

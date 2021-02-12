@@ -11,8 +11,11 @@ const browserSync = require('browser-sync')
 const server = browserSync.create()
 
 gulp.task('sass', function () {
-  return gulp.src('dev/scss/**/*.scss')
-    .pipe(sass({
+  return gulp
+    .src('./dev/scss/index.scss')
+    .pipe(plumber())
+    .pipe(
+      sass({
       outputStyle: 'compressed'  
     }))
     .pipe(
@@ -49,11 +52,12 @@ gulp.task('default', () => {
   server.init({
     server: './public'
   })
+
   //SCSS
-  gulp.watch('dev/scss/**/*.scss', gulp.series('sass'))
+  gulp.watch('./dev/scss/**/*.scss', gulp.series('sass'))
 
   //PUG
-  gulp.watch('./dev/*.pug', gulp.series('pug')).on('change', server.reload)
+  gulp.watch('./dev/components/**/*.pug', gulp.series('pug')).on('change', server.reload)
 
   //JS
   gulp.watch("./dev/js/*.js", gulp.series('babel')).on('change', server.reload)

@@ -1,3 +1,4 @@
+@import "./mixins/breakpoints.scss";
 @import "./vars.scss";
 
 
@@ -11,6 +12,10 @@
     justify-content: space-between;
     margin: 20px 10px;
     padding: 5px;
+
+    @include mobile{
+        margin: 0 10px;
+    }
 }
 
 .Container-logo {
