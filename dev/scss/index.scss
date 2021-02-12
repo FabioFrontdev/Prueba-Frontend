@@ -4,6 +4,7 @@
 @import "./header.scss";
 @import "./toggle-menu.scss";
 @import "./welcome.scss";
+@import "./cards.scss";
 
 * {
     margin: 0;
@@ -11,6 +12,7 @@
 }
 
 body {
+    
     background: url(../assets/images_bg01.png);
     background-size: 100px;
     background-color: $main-color;
@@ -19,26 +21,27 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-family: $universal-font;
 
     @include mobile{
         background-color: $main-color;
         padding: 0;
+        width: 100%;
+        max-width: 375px;
+        min-width: 320px;
     }
 
     @include tablet{
         background-color: $main-color;
+        
     }
 
     @include laptop{
         background-color: $main-color;
+        
     }
 
     @include desktop{
         background-color: $main-color;
     }
-}
-
-.main, .footer {
-    font-family: $universal-font;
-
 }
